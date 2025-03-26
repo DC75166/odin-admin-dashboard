@@ -6,8 +6,9 @@
 }
 :root{
 	--bg-color-header:rgba(255,255,255,255);
-	--bg-clr-sidebar:rgba(25,146,212,255);
-	--bg-clr-main:rgba(226,232,240,255);
+	--bg-color-sidebar:rgba(25,146,212,255);
+	--bg-color-main:rgba(226,232,240,255);
+	--bg-clr-btn-hover:rgba(204, 119, 34, 1);
 }
 body{
     font-family: 'Courier New', Courier, monospace;
@@ -19,8 +20,11 @@ body{
 		"sidebar main";
 	min-height: 100vh;
 }
+
+/* Header */
+
 header {
-	background-color: var(--bg-clr-header);
+	background-color: var(--bg-color-header);
 	grid-area: header;
 	padding: 1rem 3rem;
 }
@@ -33,7 +37,7 @@ header {
 input{
 	border:none;
 	border-radius: 16px;
-	background-color: var(--bg-clr-main);
+	background-color: var(--bg-color-main);
 	line-height: 20px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -42,13 +46,14 @@ input{
 .header1,
 .header2,
 .search,
-.profile {
+.profile
+ {
 	display: grid;
 	grid-auto-flow: column;
 	align-items: center;
 }
 .header1 {
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 2fr 1fr;
 	gap:5rem;
 	margin-bottom: 20px;
 }
@@ -57,14 +62,16 @@ input{
 }
 .search {
 	grid-template-columns: auto 1fr;
-}
-.search,
-.profile{
-	gap: 15px;
+	gap:10px;
 }
 
 .profile{
-	font-size: 12px;
+	justify-content: center;
+	gap: 28px;
+}
+
+.profile{
+	font-size: 16px;
 	font-weight: 900;
 }
 
@@ -87,17 +94,41 @@ input{
 }
 .welcome>p{
 	font-size: 10px;
+	line-height: 12px;
 }
 .user{
 	font-size: 18px;
+	line-height: 25px;
 }
+nav {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 16px;
+}
+.btn{
+	border-radius: 16px;
+	background-color: var(--bg-color-sidebar);
+	color: var(--bg-color-header);
+	border: none;
+	padding: 5px;
+	width: 80px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.btn:hover {
+	background-color: var(--bg-clr-btn-hover);
+}
+
+/* Aside */
 aside {
-	background-color: var(--bg-clr-sidebar);
+	background-color: var(--bg-color-sidebar);
 	grid-area: sidebar;
 	font-size: 0.7rem;
 	padding: 1.4rem;
 	min-height: 100vh;
 }
+
+/* main */
 main{
-	background-color: var(--bg-clr-main);
+	background-color: var(--bg-color-main);
 }
