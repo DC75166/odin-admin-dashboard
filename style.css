@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 :root{
 	--bg-color-header:rgba(255,255,255,255);
@@ -22,7 +22,7 @@ body{
 header {
 	background-color: var(--bg-clr-header);
 	grid-area: header;
-	padding: 1rem 4rem;
+	padding: 1rem 2rem 3rem;
 }
 .search-icon{
 	height:3vh;
@@ -30,7 +30,17 @@ header {
 .notification{
 	height:3vh;
 }
+input{
+	border:none;
+	border-radius: 16px;
+	background-color: var(--bg-clr-main);
+	line-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .header1,
+.header2,
 .search,
 .profile {
 	display: grid;
@@ -39,26 +49,43 @@ header {
 }
 .header1 {
 	grid-template-columns: 1fr auto;
-	/* gap: clamp(0.625rem, 32.438vw - 20.176rem, 18.75rem); */
+	gap:5rem;
 	margin-bottom: 20px;
+}
+.header2 {
+	grid-template-columns: 1fr auto;
+	gap:10rem;
+	/* margin-bottom: 20px; */
 }
 .search {
 	grid-template-columns: auto 1fr;
 }
 .search,
 .profile{
-	gap: 12px;
+	gap: 15px;
 }
 
 .profile{
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 12px;
+	font-weight: 900;
 }
 
-.profile > .profile_pic {
-	width: 34px;
+.profile_pic {
+	width: 28px;
 	border-radius: 50%;
 }
+
+.main_profile_pic{
+	width: 48px;
+	border-radius: 50%;
+}
+
+.mainprofile{
+	display: grid;
+	grid-auto-flow: column;
+	gap: none;
+}
+
 
 aside {
 	background-color: var(--bg-clr-sidebar);
