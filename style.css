@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 :root{
 	--bg-color-header:rgba(255,255,255,255);
@@ -53,9 +53,7 @@ input{
 	margin-bottom: 20px;
 }
 .header2 {
-	grid-template-columns: 1fr auto;
-	gap:10rem;
-	/* margin-bottom: 20px; */
+     justify-content: space-between;
 }
 .search {
 	grid-template-columns: auto 1fr;
@@ -83,7 +81,8 @@ input{
 .mainprofile{
 	display: grid;
 	grid-auto-flow: column;
-	gap: none;
+	align-items: center;
+	gap: 10px;
 }
 
 
