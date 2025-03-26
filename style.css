@@ -22,7 +22,7 @@ body{
 header {
 	background-color: var(--bg-clr-header);
 	grid-area: header;
-	padding: 1rem 2rem 3rem;
+	padding: 1rem 3rem;
 }
 .search-icon{
 	height:3vh;
@@ -83,9 +83,14 @@ input{
 	grid-auto-flow: column;
 	align-items: center;
 	gap: 10px;
+	font-weight: 900;
 }
-
-
+.welcome>p{
+	font-size: 10px;
+}
+.user{
+	font-size: 18px;
+}
 aside {
 	background-color: var(--bg-clr-sidebar);
 	grid-area: sidebar;
