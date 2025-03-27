@@ -1,18 +1,20 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* outline: 1px solid red; */
 }
-:root{
-	--bg-color-header:rgba(255,255,255,255);
-	--bg-color-sidebar:rgba(25,146,212,255);
-	--bg-color-main:rgba(226,232,240,255);
-	--bg-clr-btn-hover:rgba(204, 119, 34, 1);
+
+:root {
+	--bg-color-header: rgba(255, 255, 255, 255);
+	--bg-color-sidebar: rgba(25, 146, 212, 255);
+	--bg-color-main: rgba(226, 232, 240, 255);
+	--bg-color-btn-hover: rgba(204, 119, 34, 1);
 }
-body{
-    font-family: 'Courier New', Courier, monospace;
-    display: grid;
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	display: grid;
 	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 4fr;
 	grid-template-areas:
@@ -26,16 +28,19 @@ body{
 header {
 	background-color: var(--bg-color-header);
 	grid-area: header;
-	padding: 1rem 3rem;
+	padding: .5rem 3rem;
 }
-.search-icon{
-	height:3vh;
+
+.search-icon {
+	height: 3vh;
 }
-.notification{
-	height:3vh;
+
+.notification {
+	height: 3vh;
 }
-input{
-	border:none;
+
+input {
+	border: none;
 	border-radius: 16px;
 	background-color: var(--bg-color-main);
 	line-height: 20px;
@@ -46,31 +51,33 @@ input{
 .header1,
 .header2,
 .search,
-.profile
- {
+.profile {
 	display: grid;
 	grid-auto-flow: column;
 	align-items: center;
 }
+
 .header1 {
 	grid-template-columns: 2fr 1fr;
-	gap:5rem;
-	margin-bottom: 20px;
-}
-.header2 {
-     justify-content: space-between;
-}
-.search {
-	grid-template-columns: auto 1fr;
-	gap:10px;
+	gap: 5rem;
+	margin-bottom: 15px;
 }
 
-.profile{
+.header2 {
+	justify-content: space-between;
+}
+
+.search {
+	grid-template-columns: auto 1fr;
+	gap: 10px;
+}
+
+.profile {
 	justify-content: center;
 	gap: 28px;
 }
 
-.profile{
+.profile {
 	font-size: 16px;
 	font-weight: 900;
 }
@@ -80,32 +87,36 @@ input{
 	border-radius: 50%;
 }
 
-.main_profile_pic{
+.main_profile_pic {
 	width: 48px;
 	border-radius: 50%;
 }
 
-.mainprofile{
+.mainprofile {
 	display: grid;
 	grid-auto-flow: column;
 	align-items: center;
 	gap: 10px;
 	font-weight: 900;
 }
-.welcome>p{
+
+.welcome>p {
 	font-size: 10px;
 	line-height: 12px;
 }
-.user{
+
+.user {
 	font-size: 18px;
 	line-height: 25px;
 }
+
 nav {
-		display: grid;
-		grid-auto-flow: column;
-		gap: 16px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 16px;
 }
-.btn{
+
+.btn {
 	border-radius: 16px;
 	background-color: var(--bg-color-sidebar);
 	color: var(--bg-color-header);
@@ -115,8 +126,9 @@ nav {
 	font-size: 14px;
 	font-weight: 600;
 }
+
 .btn:hover {
-	background-color: var(--bg-clr-btn-hover);
+	background-color: var(--bg-color-btn-hover);
 }
 
 /* Aside */
@@ -129,6 +141,6 @@ aside {
 }
 
 /* main */
-main{
+main {
 	background-color: var(--bg-color-main);
 }
