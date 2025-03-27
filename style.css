@@ -136,7 +136,7 @@ aside {
 	background-color: var(--bg-color-sidebar);
 	grid-area: sidebar;
 	font-size: 0.7rem;
-	padding: .4rem 1.4rem 1.4rem;
+	padding: .5rem 1.4rem 1.4rem;
 	min-height: 100vh;
 }
 
@@ -151,6 +151,7 @@ aside {
 }
 .heading>img{
 	width : 30px;
+	filter: brightness(0) invert(1);
 }
 .side-element{
 	display: grid;
@@ -165,6 +166,7 @@ aside {
 }
 .side-element>img{
 	width: 15px;
+	filter: brightness(0) invert(1);
 }
 .side-row1{
 	margin-bottom: 30px;
