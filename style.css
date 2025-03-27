@@ -136,7 +136,7 @@ aside {
 	background-color: var(--bg-color-sidebar);
 	grid-area: sidebar;
 	font-size: 0.7rem;
-	padding: 1.4rem;
+	padding: .4rem 1.4rem 1.4rem;
 	min-height: 100vh;
 }
 
@@ -147,7 +147,7 @@ aside {
 	align-items: center;
 	gap:5px;
 	color: var(--bg-color-header);
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 .heading>img{
 	width : 30px;
@@ -155,10 +155,19 @@ aside {
 .side-element{
 	display: grid;
 	grid-auto-flow: column;
-	/* justify-content: start; */
+	justify-content: start;
 	align-items: center;
-	gap:5px;
+	gap:12px;
 	color: var(--bg-color-header);
+	margin-bottom: 10px;
+	font-size: smaller;
+	padding-left: 8px;
+}
+.side-element>img{
+	width: 15px;
+}
+.side-row1{
+	margin-bottom: 30px;
 }
 /* main */
 main {
