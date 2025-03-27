@@ -140,6 +140,26 @@ aside {
 	min-height: 100vh;
 }
 
+.heading{
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	align-items: center;
+	gap:5px;
+	color: var(--bg-color-header);
+	margin-bottom: 16px;
+}
+.heading>img{
+	width : 30px;
+}
+.side-element{
+	display: grid;
+	grid-auto-flow: column;
+	/* justify-content: start; */
+	align-items: center;
+	gap:5px;
+	color: var(--bg-color-header);
+}
 /* main */
 main {
 	background-color: var(--bg-color-main);
