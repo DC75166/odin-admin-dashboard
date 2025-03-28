@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 :root {
@@ -174,4 +174,28 @@ aside {
 /* main */
 main {
 	background-color: var(--bg-color-main);
+}
+
+.block-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:20px;
+	padding:10px;
+}
+
+.card{
+   padding: 10px;
+}
+
+.card-navs{
+	display: grid;
+	grid-auto-flow: column;
+	gap: 15px;
+	justify-content: end;
+	align-items: center;
+	padding-right: 10px;
+}
+
+.card-navs>img{
+	width: 15px;
 }
