@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 :root {
@@ -10,7 +10,7 @@
 	--bg-color-sidebar: rgba(25, 146, 212, 255);
 	--bg-color-main: rgba(226, 232, 240, 255);
 	--bg-color-btn-hover: rgba(204, 119, 34, 1);
-	--bg-color-card-border:rgba(240,180,41,255);
+	--bg-color-card-border: rgba(240, 180, 41, 255);
 }
 
 body {
@@ -141,72 +141,89 @@ aside {
 	min-height: 100vh;
 }
 
-.heading{
+.heading {
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: start;
 	align-items: center;
-	gap:5px;
+	gap: 5px;
 	color: var(--bg-color-header);
 	margin-bottom: 20px;
 }
-.heading>img{
-	width : 30px;
+
+.heading>img {
+	width: 30px;
 	filter: brightness(0) invert(1);
 }
-.side-element{
+
+.side-element {
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: start;
 	align-items: center;
-	gap:12px;
+	gap: 12px;
 	color: var(--bg-color-header);
 	margin-bottom: 10px;
 	font-size: smaller;
 	padding-left: 8px;
 }
-.side-element>img{
+
+.side-element>img {
 	width: 15px;
 	filter: brightness(0) invert(1);
 }
-.side-row1{
+
+.side-row1 {
 	margin-bottom: 30px;
 }
+
 /* main */
 main {
 	background-color: var(--bg-color-main);
 	grid-area: main;
 	grid-auto-flow: column;
+	grid-template-columns: 4fr 1fr;
 	display: grid;
-	padding: 2rem 1rem 2rem 1rem;
-	gap:10px;
-}
-.main-body{
-	grid-row: 1/3;
-}
-.title{
-	padding-left: .6rem;
+	padding: 1.5rem 1rem 2rem 1rem;
+	gap: 10px;
 }
 
-.block-container{
+.main-body {
+	grid-row: 1/4;
+}
+
+.title {
+	padding-left: .8rem;
+	font-size: medium;
+}
+
+.block-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap:20px;
-	padding:10px;
+	gap: 20px;
+	padding: 10px;
 }
 
-.card{
-   padding: 20px;
-   border-left: 10px solid var(--bg-color-card-border);
-   border-radius: 16px;
-   background-color: var(--bg-color-header);
+.card {
+	padding: 20px;
+	border-left: 10px solid var(--bg-color-card-border);
+	border-radius: 8px;
+	background-color: var(--bg-color-header);
 }
 
-.card>p{
-	margin-bottom:50px;
+.card>h2 {
+	font-size: medium;
 }
 
-.card-navs{
+.card>p {
+	margin-bottom: 30px;
+	font-size: x-small;
+	justify-content: start;
+	align-items: center;
+	padding-right: 24px;
+}
+
+.card-navs {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 20px;
@@ -215,10 +232,11 @@ main {
 	padding-right: 10px;
 }
 
-.card:hover{
+.card:hover {
 	background-color: var(--bg-color-card-border);
 }
-.card-navs>img{
+
+.card-navs>img {
 	width: 20px;
 }
 
