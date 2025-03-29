@@ -16,8 +16,8 @@
 body {
 	font-family: 'Courier New', Courier, monospace;
 	display: grid;
-	grid-template-columns: 1fr 4fr;
-	grid-template-rows: .5fr 4fr;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: .5fr 3fr;
 	grid-template-areas:
 		"sidebar header"
 		"sidebar main";
@@ -75,21 +75,21 @@ input {
 
 .profile {
 	justify-content: center;
-	gap: 28px;
+	gap: 30px;
 }
 
-.profile {
-	font-size: 16px;
+.name{
+	font-size: medium;
 	font-weight: 900;
 }
 
 .profile_pic {
-	width: 28px;
+	width: 34px;
 	border-radius: 50%;
 }
 
 .main_profile_pic {
-	width: 48px;
+	width: 50px;
 	border-radius: 50%;
 }
 
@@ -118,12 +118,12 @@ nav {
 }
 
 .btn {
-	border-radius: 16px;
+	border-radius: 18px;
 	background-color: var(--bg-color-sidebar);
 	color: var(--bg-color-header);
 	border: none;
-	padding: 5px;
-	width: 80px;
+	padding: 12px;
+	width: 100px;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -137,7 +137,7 @@ aside {
 	background-color: var(--bg-color-sidebar);
 	grid-area: sidebar;
 	font-size: 0.7rem;
-	padding: .5rem 1.4rem 1.4rem;
+	padding: 1.4rem 1.4rem 1.4rem 2rem;
 	min-height: 100vh;
 }
 
@@ -148,11 +148,12 @@ aside {
 	align-items: center;
 	gap: 5px;
 	color: var(--bg-color-header);
-	margin-bottom: 20px;
+	margin-bottom: 28px;
+	font-size: medium;
 }
 
 .heading>img {
-	width: 30px;
+	width: 40px;
 	filter: brightness(0) invert(1);
 }
 
@@ -164,17 +165,17 @@ aside {
 	gap: 12px;
 	color: var(--bg-color-header);
 	margin-bottom: 10px;
-	font-size: smaller;
+	font-size: small;
 	padding-left: 8px;
 }
 
 .side-element>img {
-	width: 15px;
+	width: 24px;
 	filter: brightness(0) invert(1);
 }
 
 .side-row1 {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 /* main */
@@ -245,24 +246,56 @@ main {
 	background-color: var(--bg-color-header);
 	border-radius: 8px;
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .announce-title{
 	font-size: medium;
-	margin-bottom: 9px;
+	margin-bottom: 10px;
 }
 
 .row-announce>h2{
-	font-size:xx-small;
+	font-size:small;
 	margin-bottom: 2px;
+	font-weight: 900;
 }
 
 .row-announce>p{
-    font-size: xx-small;
+    font-size: x-small;
 }
 hr{
-	margin:16px 0;
+	margin:10px 0;
 }
 .announcements{
 	grid-row: 1/2;
+}
+.trending{
+	grid-row: 2/3;
+}
+.side-body{
+	display: grid;
+}
+.card-trend{
+    background-color: var(--bg-color-header);
+	padding: 5px 20px;
+	border-radius: 8px;
+}
+.trend-profile>h2,p{
+	font-size: x-small;
+}
+.trend-title{
+	font-size: medium;
+	margin-bottom: 6px;
+}
+.row-trend>img{
+	width: 28px;
+	border-radius: 50%;
+}
+.row-trend{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 2fr;
+	justify-content: start;
+	align-items: center;
+	margin: 14px auto;
 }
