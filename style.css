@@ -10,13 +10,14 @@
 	--bg-color-sidebar: rgba(25, 146, 212, 255);
 	--bg-color-main: rgba(226, 232, 240, 255);
 	--bg-color-btn-hover: rgba(204, 119, 34, 1);
+	--bg-color-card-border:rgba(240,180,41,255);
 }
 
 body {
 	font-family: 'Courier New', Courier, monospace;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: .5fr 4fr;
 	grid-template-areas:
 		"sidebar header"
 		"sidebar main";
@@ -28,7 +29,7 @@ body {
 header {
 	background-color: var(--bg-color-header);
 	grid-area: header;
-	padding: .5rem 3rem;
+	padding: 1rem 3rem;
 }
 
 .search-icon {
@@ -174,6 +175,12 @@ aside {
 /* main */
 main {
 	background-color: var(--bg-color-main);
+	grid-area: main;
+	padding: 2rem 1rem 2rem 1rem;
+}
+
+.title{
+	padding-left: .6rem;
 }
 
 .block-container{
@@ -184,18 +191,28 @@ main {
 }
 
 .card{
-   padding: 10px;
+   padding: 20px;
+   border-left: 10px solid var(--bg-color-card-border);
+   border-radius: 16px;
+   background-color: var(--bg-color-header);
+}
+
+.card>p{
+	margin-bottom:50px;
 }
 
 .card-navs{
 	display: grid;
 	grid-auto-flow: column;
-	gap: 15px;
+	gap: 20px;
 	justify-content: end;
 	align-items: center;
 	padding-right: 10px;
 }
 
+.card:hover{
+	background-color: var(--bg-color-card-border);
+}
 .card-navs>img{
-	width: 15px;
+	width: 20px;
 }
