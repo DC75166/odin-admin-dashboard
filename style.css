@@ -244,7 +244,7 @@ main {
 .card_announce{
 	background-color: var(--bg-color-header);
 	border-radius: 8px;
-	padding: 24px 20px;
+	padding: 20px;
 }
 
 .announce-title{
