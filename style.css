@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 :root {
@@ -234,9 +234,35 @@ main {
 
 .card:hover {
 	background-color: var(--bg-color-card-border);
+	scale: 1.1;
 }
 
 .card-navs>img {
 	width: 20px;
 }
 
+.card_announce{
+	background-color: var(--bg-color-header);
+	border-radius: 8px;
+	padding: 24px 20px;
+}
+
+.announce-title{
+	font-size: medium;
+	margin-bottom: 9px;
+}
+
+.row-announce>h2{
+	font-size:xx-small;
+	margin-bottom: 2px;
+}
+
+.row-announce>p{
+    font-size: xx-small;
+}
+hr{
+	margin:16px 0;
+}
+.announcements{
+	grid-row: 1/2;
+}
